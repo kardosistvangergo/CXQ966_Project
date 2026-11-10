@@ -34,15 +34,15 @@ A program egy Python Tkinter alapú grafikus alkalmazás, amellyel klasszikus Vo
 
 ### Modulok:
 1. main.py: A program belépési pontja, tartalmazza a Tkinter grafikus felületet és az eseménykezelő függvényeket.
-2. bogar_modul_XY.py: Saját logikai modul.
+2. bogar_modul_KIG.py: Saját logikai modul.
 
 ### Osztályok:
-- BogarAuto_XY: A járműveket reprezentáló saját osztály.
-  - becsult_ertek_szamitas_XY(): Kiszámítja az autó becsült piaci értékét a kor és az állapot alapján.
-  - kor_kiszamitas_XY(aktualis_ev): Megadja az autó életkorát években.
-  - specifikacio_lekerdezes_XY(): Összeállítja a jármű modell- és motoradatait.
+- BogarAuto_KIG: A járműveket reprezentáló saját osztály.
+  - becsult_ertek_szamitas_KIG(): Kiszámítja az autó becsült piaci értékét a kor és az állapot alapján.
+  - kor_kiszamitas_KIG(aktualis_ev): Megadja az autó életkorát években.
+  - specifikacio_lekerdezes_KIG(): Összeállítja a jármű modell- és motoradatait.
 
-### Modul függvények (bogar_modul_XY.py):
-1. adatbazis_betoltes_XY(): Visszaadja a gyári tesztadatok listáját.
-2. legregebbi_bogar_kereses_XY(bogar_lista): Kiválasztja a listában szereplő legidősebb autó objektumot.
-3. gyujtemeny_osszertek_XY(bogar_lista): Kiszámolja a teljes gyűjtemény becsült összegét.
+### Modul függvények (bogar_modul_KIG.py):
+1. adatbazis_betoltes_KIG(): Visszaadja a gyári tesztadatok listáját.
+2. legregebbi_bogar_kereses_KIG(bogar_lista): Kiválasztja a listában szereplő legidősebb autó objektumot.
+3. gyujtemeny_osszertek_KIG(bogar_lista): Kiszámolja a teljes gyűjtemény becsült összegét.
