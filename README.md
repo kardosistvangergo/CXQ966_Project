@@ -34,7 +34,7 @@ A program egy Python Tkinter alapú grafikus alkalmazás, amellyel klasszikus Vo
 
 ### Modulok:
 1. main.py: A program belépési pontja, tartalmazza a Tkinter grafikus felületet és az eseménykezelő függvényeket.
-2. bogar_modul_XY.py: Saját logikai modul (A fájlnévben az XY helyére a saját monogramodat írd!).
+2. bogar_modul_XY.py: Saját logikai modul.
 
 ### Osztályok:
 - BogarAuto_XY: A járműveket reprezentáló saját osztály.
