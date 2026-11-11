@@ -26,7 +26,7 @@ A program egy Python Tkinter alapú grafikus alkalmazás, amellyel klasszikus Vo
    - Válaszd ki a kívánt VW Bogár modellt a legördülő menüből.
    - Válaszd ki az autó állapotát.
    - Kattints az Értékbecslés és Specifikáció gombra az egyedi adatok megjelenítéséhez.
-   - Kattints a Teljes Gyűjteményi Statisztika gombra az adatbázisban szereplő összes autó együttes értékének és a legrégebbi gépnek a lekérdezéséhez.
+   - Kattints a Teljes Gyűjteményi Statisztika gombra az adatbázisban szereplő összes autó együttes értékének valamint a legrégebbi járműjének a lekérdezéséhez.
 
 ---
 
@@ -34,13 +34,13 @@ A program egy Python Tkinter alapú grafikus alkalmazás, amellyel klasszikus Vo
 
 ### Modulok:
 1. main.py: A program belépési pontja, tartalmazza a Tkinter grafikus felületet és az eseménykezelő függvényeket.
-2. bogar_modul_KIG.py: Saját logikai modul.
+2. bogar_modul_KIG.py: A projekt saját háttérmodulja, amely az alapadatok tárolását, a járművek osztályszintű modellezését, valamint az értékbecslési és statisztikai számítási logikát végzi.
 
 ### Osztályok:
 - BogarAuto_KIG: A járműveket reprezentáló saját osztály.
   - becsult_ertek_szamitas_KIG(): Kiszámítja az autó becsült piaci értékét a kor és az állapot alapján.
   - kor_kiszamitas_KIG(aktualis_ev): Megadja az autó életkorát években.
-  - specifikacio_lekerdezes_KIG(): Összeállítja a jármű modell- és motoradatait.
+  - specifikacio_lekerdezes_KIG(): Összeállítja a jármű modell és motoradatait.
 
 ### Modul függvények (bogar_modul_KIG.py):
 1. adatbazis_betoltes_KIG(): Visszaadja a gyári tesztadatok listáját.
