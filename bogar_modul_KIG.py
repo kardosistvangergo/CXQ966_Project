@@ -1,3 +1,5 @@
+import datetime
+
 class BogarAuto_KIG:
     def __init__(self, modell_nev, gyartasi_ev, eredeti_ar_huf, motor_type, allapot="Megkímélt gyári"):
         self.modell_nev = modell_nev
@@ -15,7 +17,7 @@ class BogarAuto_KIG:
         elif self.allapot == "OT-rendszámos / Restaurált":
             szorzo = 2.1
 
-        kor_szorzo = 1.0 + (2026 - self.gyartasi_ev) * 0.03
+        kor_szorzo = 1.0 + (datetime.datetime.now().year - self.gyartasi_ev) * 0.03
         return round(self.eredeti_ar_huf * szorzo * kor_szorzo)
 
     def kor_kiszamitas_KIG(self, aktualis_ev):
@@ -66,8 +68,6 @@ def adatbazis_betoltes_KIG():
 
 
 def legregebbi_bogar_kereses_KIG(bogar_lista):
-    if not bogar_lista:
-        return None
     legregebbi = bogar_lista[0]
     for auto in bogar_lista:
         if auto.gyartasi_ev < legregebbi.gyartasi_ev:

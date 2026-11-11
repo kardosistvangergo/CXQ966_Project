@@ -3,10 +3,6 @@ from tkinter import ttk
 import datetime
 import bogar_modul_KIG as bm
 
-NEV = "Kardos István Gergő"
-NEPTUN_KOD = "CXQ966"
-
-
 class BogarApp:
     def __init__(self, gyoker):
         self.app = gyoker
@@ -26,13 +22,13 @@ class BogarApp:
             )
             self.auto_objektumok.append(auto)
 
-        self.felulet_epites()
+        self.felulet()
 
-    def felulet_epites(self):
+    def felulet(self):
         cim_cimke = tk.Label(self.app, text="VW Bogár Értékbecslő", font=("Helvetica", 16, "bold"))
         cim_cimke.pack(pady=10)
 
-        fejlec_info = tk.Label(self.app, text=f"Hallgató: {NEV} | Neptun Kód: {NEPTUN_KOD}",
+        fejlec_info = tk.Label(self.app, text=f"Hallgató: Kardos István Gergő | Neptun Kód: CXQ966",
                                font=("Helvetica", 9, "italic"))
         fejlec_info.pack(pady=2)
 
